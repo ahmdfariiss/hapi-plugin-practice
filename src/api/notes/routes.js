@@ -13,17 +13,17 @@ const routes = (handler) => [
   {
     method: "GET",
     path: "/notes/{id}",
-    method: handler.getNoteByIdHandler,
+    handler: handler.getNoteByIdHandler,
   },
   {
     method: "PUT",
     path: "/notes/{id}",
-    method: handler.putNoteByIdHandler,
+    handler: handler.putNoteByIdHandler,
   },
   {
     method: "DELETE",
     path: "/notes/{id}",
-    method: handler.deleteNoteByIdHandler,
+    handler: handler.deleteNoteByIdHandler,
   },
 ];
 
